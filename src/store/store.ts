@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
-import countSlice from "@/store/countSlice";
+import commandsSlice from "@/store/commandsSlice";
 
 export const makeStore = () => {
     return configureStore({
         reducer: {
-            count: countSlice
+            commands: commandsSlice
         }
     })
 }

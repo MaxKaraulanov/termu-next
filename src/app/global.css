@@ -12,6 +12,7 @@ html {
 body * {
     box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "JetBrains Mono", monospace;
 }
 
 body {
@@ -79,42 +80,43 @@ h6 {
     background-color: white;
 }
 
-.container {
-    max-width: 1294px;
-    padding: 0 40px;
-    margin: 0 auto;
-}
-
-.title {
-    font-weight: 500;
-    font-size: 54px;
-    text-align: center;
-    color: #ffffff;
-}
-
-.link {
+.commands__container {
     display: flex;
-    align-items: center;
-    border-radius: 12px;
-    padding: 14px 32px;
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-    color: #ffffff;
-    border: none;
-    background: #167dff;
-    transition: background-color .3s ease-in-out;
-    cursor: pointer;
-    width: fit-content;
-}
-
-.link:hover {
-    background: rgba(22, 125, 255, 0.8);
-}
-
-.main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
     min-height: 100vh;
+    padding: 24px;
+}
+
+.command {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+    min-height: 32px;
+}
+
+.input__container {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.input__text {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.input {
+    font-weight: 500;
+    font-size: 24px;
+    color: #ffffff;
+    background: none;
+    border: none;
+    outline: none;
+    width: 100vw;
 }
