@@ -1,0 +1,120 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+body * {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    background: #1a1b1e;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "JetBrains Mono", monospace;
+}
+
+body.lock {
+    overflow-y: hidden;
+}
+
+* img {
+    pointer-events: none;
+    user-select: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: inherit;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: white;
+}
+
+.container {
+    max-width: 1294px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 54px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 14px 32px;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    background: #167dff;
+    transition: background-color .3s ease-in-out;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.link:hover {
+    background: rgba(22, 125, 255, 0.8);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
