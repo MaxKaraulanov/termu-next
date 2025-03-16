@@ -17,7 +17,17 @@ const commandsSlice = createSlice({
     initialState,
     reducers: {
         enterCommand: (state, action: PayloadAction<string>) => {
-            state.commands.push(action.payload)
+            switch (action.payload) {
+                case 'cls':
+                case 'clear':
+                    state.commands = []
+                    break
+                case '':
+                    state.commands.push(`User ~ Not Found`)
+                    break
+                default:
+                    state.commands.push(`User ~ ${action.payload}`)
+            }
         },
         updateInput: (state, action: PayloadAction<string>) => {
             state.input = action.payload
