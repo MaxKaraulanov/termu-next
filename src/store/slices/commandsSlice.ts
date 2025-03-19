@@ -1,11 +1,11 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 
-interface ICommandsSlice {
+interface ICommandsState {
     input: string
     commands: Array<string>
 }
 
-const initialState: ICommandsSlice = {
+const initialState: ICommandsState = {
     input: '',
     commands: [
 
@@ -23,10 +23,10 @@ const commandsSlice = createSlice({
                     state.commands = []
                     break
                 case '':
-                    state.commands.push(`User ~ Not Found`)
+                    state.commands.push('{ Empty }')
                     break
                 default:
-                    state.commands.push(`User ~ ${action.payload}`)
+                    state.commands.push(action.payload)
             }
         },
         updateInput: (state, action: PayloadAction<string>) => {
