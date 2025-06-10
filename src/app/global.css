@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    /*overflow-x: hidden;*/
 }
 
 * {
@@ -20,6 +21,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: "JetBrains Mono", monospace;
+    /*overflow-x: hidden;*/
 }
 
 body.lock {
@@ -93,7 +95,7 @@ h6 {
 .command {
     font-weight: 500;
     font-size: 24px;
-    text-align: center;
+    text-align: left;
     color: #ffffff;
     min-height: 32px;
 }
@@ -102,6 +104,7 @@ h6 {
     display: flex;
     align-items: center;
     column-gap: 14.4px;
+    width: 100%;
 }
 
 .input__text {
@@ -119,5 +122,5 @@ h6 {
     background: none;
     border: none;
     outline: none;
-    width: 100vw;
+    width: -webkit-fill-available;
 }

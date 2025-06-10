@@ -6,8 +6,8 @@ interface IUserState {
 }
 
 const initialState: IUserState = {
-    name: 'Max',
-    id: '8523948u4bn50285'
+    name: 'Danil',
+    id: '885cd3d8'
 }
 
 const userSlice = createSlice({
